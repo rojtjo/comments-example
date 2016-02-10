@@ -6,5 +6,6 @@
 </head>
 <body>
     <h1>{{ $article->name }}</h1>
+    @include('comments', ['comments' => $article->comments])
 </body>
 </html>
