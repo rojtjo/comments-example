@@ -17,7 +17,7 @@ use App\Article;
 Route::get('/', function () {
     $article = Article::find(1);
 
-    return view('home', [
+    return view('article', [
         'article' => $article
     ]);
 });
