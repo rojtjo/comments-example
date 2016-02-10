@@ -11,8 +11,15 @@
 |
 */
 
+use App\Article;
+
+
 Route::get('/', function () {
-    return view('welcome');
+    $article = Article::find(1);
+
+    return view('home', [
+        'article' => $article
+    ]);
 });
 
 /*
